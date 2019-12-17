@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+  --colorOne: #d5ecf4;
+  --colorTwo: #e5efd9;
+  --colorThree: #fcf8c0;
+  --colorFour: #ebebeb;
+  --colorFive: #f4c5c3;
+  --colorSix: #e5efd8;
+  --colorSeven: #fcf8c0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.header h1 {
+  font-size: 90px;
+}
+
+.header .header__column {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav span {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav li {
+  margin-bottom: 10px;
+}
+
+.header__nav li:last-child {
+  margin-bottom: 0px;
+}
+
+.grid {
+  grid-auto-rows: 30vh;
+  grid-gap: 20px;
+}
+
+.grid .grid__item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .grid__item:first-child {
+  grid-row: span 2;
+  background-color: #d5ecf4;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/f8/78/25/f87825865f5a5c79161a46de7ab08d09.jpg);
+  height: 340px;
+}
+
+.grid .grid__item:nth-child(3) {
+  background-color: #e5efd9;
+  background-color: var(--colorTwo);
+}
+
+.grid .grid__item:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/49/1b/f4/491bf469d6ffd64e897cbbf1a6d059a8.jpg);
+  height: 340px;
+}
+
+.grid .grid__item:nth-child(5) {
+  background-color: #fcf8c0;
+  background-color: var(--colorThree);
+}
+
+.grid .grid__item:nth-child(6) {
+  background-color: #ebebeb;
+  background-color: var(--colorFour);
+}
+
+.grid .grid__item:nth-child(7) {
+  background-image: url(https://i.pinimg.com/236x/ea/1f/f4/ea1ff4229b29cd66996cb375baf04a08.jpg);
+}
+
+.grid .grid__item:nth-child(8) {
+  grid-area: span 2 / span 2;
+  background-color: #f4c5c3;
+  background-color: var(--colorFive);
+}
+
+.grid .grid__item:nth-child(9) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/1e/82/67/1e82672100126c1c23e87a02c1e05d45.jpg);
+  height: 340px;
+}
+
+.grid .grid__item:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/236x/97/b4/7d/97b47d55706c8ef67cb23e084b94721e.jpg);
+}
+
+.grid .grid__item:nth-child(11) {
+  background-image: url(https://i.pinimg.com/564x/55/fa/e7/55fae7eaed6ace14a7169182a9479b03.jpg);
+}
+
+.grid .grid__item:nth-child(12) {
+  background-image: url(https://i.pinimg.com/564x/ce/5a/5c/ce5a5c8b0dfd91ed0eb52d9867d96d54.jpg);
+}
+
+.grid .grid__item:nth-child(13) {
+  grid-area: span 2 / span 2;
+  background-color: #e5efd8;
+  background-color: var(--colorSix);
+}
+
+.grid .grid__item:nth-child(14) {
+  background-image: url(https://i.pinimg.com/564x/db/23/48/db23489c2fd4f8af715a3fead36273bc.jpg);
+}
+
+.grid .grid__item:nth-child(15) {
+  background-color: #fcf8c0;
+  background-color: var(--colorSeven);
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */

@@ -1,0 +1,21 @@
+{
+  "name": "ArtisticProtfolioWebsite",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postcss-preset-env": "^6.7.0"
+  },
+  "scripts": {
+    "start": "parcel node index.html"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 3
+      }
+    }
+  }
+}

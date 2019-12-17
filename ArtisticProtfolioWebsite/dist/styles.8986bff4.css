@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+}
+
+.header .header__logobox {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: flex;
+  background-color: #2c3e50;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  color: white;
+}
+
+.header .header__logosub {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.main__grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.main__grid .main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.main .main__title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.main__title .title__two {
+  position: absolute;
+  font-weight: 600;
+  font-size: 150px;
+}
+
+.main__title .title__one {
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.main__title .title__one:first-child {
+  margin-bottom: 150px;
+}
+
+.main__title .title__one:last-child {
+  margin-bottom: 200px;
+}
+
+.main__subtitle .sub__title {
+  font-weight: 600;
+}
+
+.main__grid .image {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  background-image: url(https://i.pinimg.com/236x/05/bd/2b/05bd2bb70b292dde8fbd5d5173832f79.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.image .image__box {
+  width: 150px;
+  height: 75px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */

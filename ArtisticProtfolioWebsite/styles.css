@@ -1,0 +1,87 @@
+@import "reset.css";
+
+html,
+body {
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+}
+
+.header .header__logobox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: #2c3e50;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header .header__logosub {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.main__grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.main__grid .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .main__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title .title__two {
+  position: absolute;
+  font-weight: 600;
+  font-size: 150px;
+}
+
+.main__title .title__one {
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.main__title .title__one:first-child {
+  margin-bottom: 150px;
+}
+
+.main__title .title__one:last-child {
+  margin-bottom: 200px;
+}
+
+.main__subtitle .sub__title {
+  font-weight: 600;
+}
+
+.main__grid .image {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(https://i.pinimg.com/236x/05/bd/2b/05bd2bb70b292dde8fbd5d5173832f79.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.image .image__box {
+  width: 150px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
